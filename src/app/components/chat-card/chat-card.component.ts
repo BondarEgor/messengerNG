@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './chat-card.component.css'
 })
 export class ChatCardComponent {
-
+  cards = [
+    {avatar:'E B', name: 'Egor Bondar', time: "9:14 am"},
+    {avatar:'E B', name: 'Egor Bondar', time: "9:14 am"},
+    {avatar:'E B', name: 'Egor Bondar', time: "9:14 am"},{avatar:'E B', name: 'Egor Bondar', time: "9:14 am"},{avatar:'E B', name: 'Egor Bondar', time: "9:14 am"},
+  ]
 }

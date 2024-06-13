@@ -11,9 +11,9 @@
 			<tui-avatar text="E B"></tui-avatar>
 		</div>
 	</div>
-	<div class='px-6 bg-[#F5F9FA]'>
+	<div class='px-6 bg-[#F5F9FA] flex gap-3 max-w-[400px]'>
 		<button [ngClass]="{'active': activeTab === tab }" *ngFor="let tab of tabs" size="s" appearance="flat" tuiButton
-			type="button" class="tui-space_bottom-2 tui-space_top-2" (click)='setActive(tab)'>
+			type="button" class="flex-grow tui-space_bottom-2 tui-space_top-2" (click)='setActive(tab)'>
 			{{tab}}
 		</button>
 	</div>

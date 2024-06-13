@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './chat-scroll.component.css'
 })
 export class ChatScrollComponent {
-
 }
