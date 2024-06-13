@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SidebarLinks } from '../../types/SidebarLinks';
+import { SidebarLinks } from '../../../types/SidebarLinks';
 
 @Component({
   selector: 'app-sidebar',

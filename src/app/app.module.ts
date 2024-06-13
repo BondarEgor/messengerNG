@@ -11,7 +11,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarModule } from './sidebar/sidebar.module';
+import { SidebarModule } from './components/sidebar/sidebar.module';
+import { HeaderModule } from './components/header/header.module';
+import { HomePageModule } from './pages/home-page/home-page.module'
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +25,8 @@ import { SidebarModule } from './sidebar/sidebar.module';
     TuiRootModule,
     TuiDialogModule,
     TuiAlertModule,
+    HeaderModule,
+    HomePageModule
   ],
   providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent],

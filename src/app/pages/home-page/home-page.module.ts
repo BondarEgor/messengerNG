@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './home-page.component';
+import { HeaderModule } from '../../components/header/header.module';
+import { ChatScrollModule } from '../../components/chat-scroll/chat-scroll.module'
 
 @NgModule({
   declarations: [HomePageComponent],
-  imports: [CommonModule],
+  imports: [CommonModule, HeaderModule,ChatScrollModule],
   exports: [HomePageComponent],
 })
 export class HomePageModule {}
