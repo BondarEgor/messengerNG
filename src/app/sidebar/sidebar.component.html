@@ -1,0 +1,13 @@
+<div class="flex flex-col h-screen py-4 px-6 lg:w-10 bg-[#162B3A]">
+  <ul class="flex flex-col gap-4 items-center h-full">
+    <li *ngFor="let icon of icons">
+      <a tuiLink [routerLink]="icon.link" tuiLink [icon]="icon.src">
+      </a>
+    </li>
+    <li class="mt-auto">
+      <a routerLink="/login" tuiLink icon="tuiIconLogInLarge">
+      </a>
+    </li>
+  </ul>
+
+</div>
