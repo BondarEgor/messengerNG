@@ -1,3 +1,5 @@
-<section class='flex flex-col  p-3 h-full overflow-y-auto no-scrollbar lg:max-w-[360px] bg-white rounded-md ml-5 mt-2'>
-<app-chat-card></app-chat-card>
+<section
+	class='relative h-[630px] flex flex-col  overflow-y-auto  no-scrollbar w-[380px] max-w-[380px] bg-white rounded-md'>
+		<tui-loader class='absolute top-[40%]' size="xxl" [showLoader]="(isLoading | async) || false" ></tui-loader>
+		<app-chat-card></app-chat-card>
 </section>

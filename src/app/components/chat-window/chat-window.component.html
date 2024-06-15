@@ -1,0 +1,17 @@
+<section class="w-full h-full bg-white rounded-md">
+	<header class="w-full bg-[#046E8F] rounded-md pr-3">
+		<div tuiCell="m" class="w-full flex justify-between">
+			<div class="flex gap-3">
+				<tui-avatar text="E B"></tui-avatar>
+				<div>
+					<p class='text-white'>Jess Toriff</p>
+					<div class="status text-white">Online</div>
+				</div>
+			</div>
+			<div class="tools mr-3">
+				<button class='fill-white' size="m" *ngFor="let button of buttons" tuiIconButton appearance="flat"
+					[icon]="button.icon"></button>
+			</div>
+		</div>
+	</header>
+</section>

@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { SidebarModule } from './components/sidebar/sidebar.module';
 import { HeaderModule } from './components/header/header.module';
 import { HomePageModule } from './pages/home-page/home-page.module'
+import { HttpClient, HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +27,8 @@ import { HomePageModule } from './pages/home-page/home-page.module'
     TuiDialogModule,
     TuiAlertModule,
     HeaderModule,
-    HomePageModule
+    HomePageModule,
+    HttpClientModule
   ],
   providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent],

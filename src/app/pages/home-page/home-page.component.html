@@ -1,2 +1,9 @@
-<app-header></app-header>
-<app-chat-scroll></app-chat-scroll>
+<div class="flex flex-col h-full w-full">
+  <div class="flex-shrink-0">
+    <app-header></app-header>
+  </div>
+  <div class="h-full w-full flex gap-4 mt-2 flex-grow px-5">
+    <app-chat-scroll class="flex-shrink-0 h-72"></app-chat-scroll>
+    <app-chat-window class="flex-grow"></app-chat-window>
+  </div>
+</div>

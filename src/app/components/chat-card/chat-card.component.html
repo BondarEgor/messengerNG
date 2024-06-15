@@ -1,16 +1,19 @@
-<div *ngFor="let card of cards">
-	<div class='justify-between flex gap-3 hover:bg-[#e6e4e4] hover:cursor-pointer transition-all duration-300 p-2 rounded-lg'>
+<div *ngFor="let card of cards | async " tuiCell='m'>
+	<div
+		class='justify-between flex gap-3 hover:bg-[#e6e4e4] hover:cursor-pointer transition-all duration-300 p-2 rounded-lg'>
 		<div class='flex gap-4'>
-			<tui-avatar [text]="card.avatar"></tui-avatar>
-		<div>
-			<h6>{{card.name}}</h6>
-			<tui-line-clamp content="Hello, i haven't seen you in a while, how is that going?" [lineHeight]="20"
-				[linesLimit]="1"></tui-line-clamp>
+			<tui-avatar [avatarUrl]="card.avatar" [rounded]="true"></tui-avatar>
+			<div class='w-full'>
+				<h6 class='font-bold flex items-center'>{{card.name}}</h6>
+				<tui-line-clamp 
+				class='min-w-[220px]'
+				[content]='card.message' [lineHeight]="20"
+					[linesLimit]="1"></tui-line-clamp>
+			</div>
 		</div>
-	</div>
-		<div class='flex min-w-14 flex-col'>
-			<div class='time'>{{card.time}}</div>
-			<div class='unread self-end w-5 h-5 text-center rounded-full bg-red-500 text-white'>1</div>
+		<div class='flex flex-col'>
+			<div class='time font-thin'>{{card.time}}</div>
+			<div *ngIf="card.unread" class='unread self-end w-5 h-5 text-center rounded-full bg-red-500 text-white'>{{card.unread}}</div>
 		</div>
 	</div>
 </div>
