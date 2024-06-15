@@ -11,12 +11,5 @@
 			<tui-avatar text="E B"></tui-avatar>
 		</div>
 	</div>
-	<div class='w-full bg-[#F5F9FA]'>
-		<div class='px-6  flex max-w-[400px]'>
-			<button [ngClass]="{'active': activeTab === tab.endpoint}" *ngFor="let tab of tabs" size="s" appearance="flat" tuiButton
-		type="button" class="min-w-[90px] tui-space_bottom-2 tui-space_top-2" (click)='handleClick(tab.endpoint)'>
-	{{tab.text}}
-</button>
-</div>
-	</div>
+	<app-tab></app-tab>
 </header>

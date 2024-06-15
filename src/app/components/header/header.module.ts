@@ -4,6 +4,7 @@ import { HeaderComponent } from './header.component';
 import { ReactiveFormsModule } from '@angular/forms'
 import {TuiAvatarModule, TuiInputModule} from '@taiga-ui/kit';
 import { TuiButtonModule, TuiTextfieldControllerModule } from '@taiga-ui/core'
+import { TabModule } from '../tab/tab.module'
 
 @NgModule({
   declarations: [HeaderComponent],
@@ -13,7 +14,8 @@ import { TuiButtonModule, TuiTextfieldControllerModule } from '@taiga-ui/core'
     TuiInputModule,
     TuiAvatarModule,
     TuiTextfieldControllerModule,
-    TuiButtonModule
+    TuiButtonModule,
+    TabModule
   ],
   exports: [HeaderComponent],
 })

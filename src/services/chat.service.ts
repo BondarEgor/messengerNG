@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ApiService } from './api.service';
-import { BehaviorSubject, delay, tap } from 'rxjs';
+import { BehaviorSubject, debounceTime, delay, tap } from 'rxjs';
 import { ChatCards } from '../types/ChatCards';
 
 @Injectable({

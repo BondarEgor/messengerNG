@@ -16,3 +16,6 @@
 			scrollbar-width: none;
 }
 }
+button.active {
+  background-color: #D8DDF2;
+}
