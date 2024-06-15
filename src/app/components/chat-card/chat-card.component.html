@@ -1,7 +1,7 @@
 <div *ngFor="let card of cards | async " class='p-2'>
 	<div
 		class='justify-between flex gap-3 hover:bg-[#e6e4e4] hover:cursor-pointer transition-all duration-300 p-2 rounded-lg'>
-		<div class='flex gap-4'>
+		<div class='flex gap-4  items-center'>
 			<tui-avatar [avatarUrl]="card.avatar" [rounded]="true"></tui-avatar>
 			<div class='w-full'>
 				<h6 class='font-bold flex items-center'>{{card.name}}</h6>
@@ -10,9 +10,9 @@
 			</div>
 		</div>
 
-		<div class='flex flex-col'>
+		<div class='flex flex-col justify-between'>
 			<div class='time font-thin'>{{card.time}}</div>
-			<div *ngIf="card.unread" class='unread self-end w-5 h-5 text-center rounded-full bg-red-500 text-white'>
+			<div *ngIf="card.unread" class='font-bold unread self-end w-5 h-5 text-center rounded-full bg-red-500 text-white'>
 				{{card.unread}}</div>
 		</div>
 
