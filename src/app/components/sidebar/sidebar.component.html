@@ -5,7 +5,7 @@
       </a>
     </li>
     <li class="mt-auto">
-      <a mode="positive" tuiLink routerLink="/login" icon="tuiIconLogInLarge">
+      <a mode="positive" tuiLink (click)="onLogin()" [icon]="!isAuth? 'tuiIconLogInLarge':'tuiIconLogOutLarge'">
       </a>
     </li>
   </ul>

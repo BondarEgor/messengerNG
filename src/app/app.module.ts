@@ -14,8 +14,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarModule } from './components/sidebar/sidebar.module';
 import { HeaderModule } from './components/header/header.module';
-import { HomePageModule } from './pages/home-page/home-page.module'
-import { HttpClient, HttpClientModule } from '@angular/common/http'
+import { HomePageModule } from './pages/home-page/home-page.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { LoginPageModule } from './pages/login-page/login-page.module'
 
 @NgModule({
   declarations: [AppComponent],
@@ -30,6 +33,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http'
     HeaderModule,
     HomePageModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    CommonModule,
+    LoginPageModule,
+    FormsModule,
   ],
   providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent],

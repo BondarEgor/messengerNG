@@ -1,0 +1,45 @@
+.chat-container {
+	width: 100%;
+	height: 600px;
+	background-color: white;
+	border-radius: 6px;
+}
+
+.chat-header {
+	width: 100%;
+	background-color: gray;
+	border-radius: 6px;
+	padding-right: 12px;
+}
+
+.header-content {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-left {
+	display: flex;
+	gap: 12px;
+}
+
+.user-info {
+	color: white;
+}
+
+.user-name {
+	color: white;
+}
+
+.user-status {
+	color: white;
+}
+
+
+.header-right {
+	margin-right: 12px;
+	display: flex;
+	gap: 10px;
+}
+
+.tool-button {}

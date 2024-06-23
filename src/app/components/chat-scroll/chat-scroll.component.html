@@ -1,5 +1,4 @@
-<section
-	class='h-[600px] max-h-[600px] flex flex-col  overflow-y-auto  no-scrollbar w-[380px] max-w-[380px] bg-white rounded-md'>
-	<tui-loader class=' top-[40%]' size="xxl" [showLoader]="(isLoading | async) || false"></tui-loader>
+<section class='no-scrollbar chat-section'>
+	<tui-loader class='chat-loader' size="xxl" [showLoader]="(isLoading | async) || false"></tui-loader>
 	<app-chat-card></app-chat-card>
 </section>
